@@ -1,0 +1,29 @@
+<form >
+    <label for="nom">Nom:</label>
+    <input type="text" id="nom" name="nom" 
+    [(ngModel)]="carteVisite.nom">
+   
+    <label for="prenom">Prénom:</label>
+    <input type="text" id="prenom" name="prenom" [(ngModel)]="carteVisite.prenom">
+   
+    <label for="prenom">Entreprise:</label>
+    <input type="text" id="entreprise" name="entreprise" [(ngModel)]="carteVisite.entreprise">
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" [(ngModel)]="carteVisite.email">
+
+    <label for="telephone">Telephone:</label>
+    <input type="tel" id="telephone" name="telephone" [(ngModel)]="carteVisite.telephone">
+    
+<button type="submit" (ngSubmit)="onSubmit()">Enregistrer</button>
+</form>
+
+<div class="ma-div">
+    <h2>Carte Visite</h2>
+    <p>Nom: {{ carteVisite.nom }}</p>
+    <p>Prénom: {{ carteVisite.prenom}}</p>
+    <p>Entreprise: {{ carteVisite.entreprise }}</p>
+    <p>Email: {{ carteVisite.email }}</p>
+    <p>Telephone: {{ carteVisite.telephone }}</p>
+    
+</div>
